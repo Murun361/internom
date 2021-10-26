@@ -26,8 +26,7 @@
     padding: 5px;
 }
 .foot{
-    text-align: right;
-    background-color: coral;
+    text-align: center;
 }
 .container>input[type=text], .container>input[type=password] {
     width: 100%;
