@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бичиг хэрэг | Stationery</title>
+    <meta name="keywords" content="nom, ном, book, books, зохиол, internom">
+    <meta name="author" content="NMD">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="intended to sell books">
+    <link rel="canonical" href="https://murun361.github.io/internom">
     <link rel="stylesheet" href="style.css">
+    <title>Internom | Интерном</title>
 </head>
 <body>
     <header>
         <nav>
           <section>
-            <img src="logo.png" alt="internom-logo">
-            <div>
-                <input type="text" placeholder="Search" class="searchin">
-                <button class="searchbtn">Go</button>
+            <img src="logo.png" alt="internom-logo" class="logo">
+            <div class="search">
+              <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <div class="search"></div>
+              </div>
+            <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
+            <div id="login" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="closebtn">
+              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h1>Нэвтрэх</h1>
             </div>
-            <div>
-                <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
-
-<div id="login" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="closebtn">
-      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <h1>Нэвтрэх</h1>
-    </div>
 
     <div class="container">
       <label><b>Username</b></label>
@@ -85,14 +88,14 @@
                 <div class="dropdown">
                     <span class="dropdown-text">Номны төрөл</span>
                     <div class="dropdown-content">
-                      <p><a href="bestseller.html">Бестселлер</a></p>
-                      <p><a href="history.html">Түүхийн ном</a></p>
-                      <p><a href="action.html">Адал явдалт ном</a></p>
-                      <p><a href="literature.html">Уран зохиолын ном</a></p>
-                      <p><a href="kids.html">Хүүхдийн ном</a></p>
-                      <p><a href="medical.html">Анагаах ухааны ном</a></p>
-                      <p><a href="financial.html">Эдийн засгийн ном</a></p>
-                  </div>
+                        <p><a href="bestseller.html">Бестселлер</a></p>
+                        <p><a href="history.html">Түүхийн ном</a></p>
+                        <p><a href="action.html">Адал явдалт ном</a></p>
+                        <p><a href="literature.html">Уран зохиолын ном</a></p>
+                        <p><a href="kids.html">Хүүхдийн ном</a></p>
+                        <p><a href="medical.html">Анагаах ухааны ном</a></p>
+                        <p><a href="financial.html">Эдийн засгийн ном</a></p>
+                    </div>
                 </div>
                 <span><a href="hyamdral.html">Хямдралтай номнууд</a></span>
                 <span><a href="bichig_hereg.html">Бичиг хэрэг</a></span>
@@ -103,23 +106,23 @@
     </header>
     <main>
         <section class="garchig">
-            <h1>Бичиг хэрэг</h1>
+            <h1>Хүүхдийн ном</h1>
         </section>
         <section>
             <article>
-                <img src="pen.png" alt="pen">
+                <img src="kid1.jpg" alt="kid1">
                 <h5>Үнэ</h5>
                 <h5>Сагслах</h5>
-                <img src="pencil.png" alt="pencil">
+                <img src="kid2.jpg" alt="kid2">
                 <h5>Үнэ</h5>
                 <h5>Сагслах</h5>
-                <img src="rurler.jpg" alt="ruler">
+                <img src="kid3.jpg" alt="kid3">
                 <h5>Үнэ</h5>
                 <h5>Сагслах</h5>
-                <img src="notebook.jpg" alt="notebook">
+                <img src="kid4.jpg" alt="kid4">
                 <h5>Үнэ</h5>
                 <h5>Сагслах</h5>
-                <img src="glue.jpg" alt="glue">
+                <img src="kid5.jpg" alt="kid5">
                 <h5>Үнэ</h5>
                 <h5>Сагслах</h5>
             </article>
@@ -136,5 +139,3 @@
           </article>
           </section>
       </footer>
-</body>
-</html>

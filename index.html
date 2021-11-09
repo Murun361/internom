@@ -16,21 +16,19 @@
     <header>
         <nav>
           <section>
-            <img src="logo.png" alt="internom-logo">
-            <div>
-                <input type="text" placeholder="Search" class="searchin">
-                <button class="searchbtn">Go</button>
+            <img src="logo.png" alt="internom-logo" class="logo">
+            <div class="search">
+              <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <div class="search"></div>
+              </div>
+            <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
+            <div id="login" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="closebtn">
+              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <h1>Нэвтрэх</h1>
             </div>
-            <div>
-                <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
-
-<div id="login" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="closebtn">
-      <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <h1>Нэвтрэх</h1>
-    </div>
 
     <div class="container">
       <label><b>Username</b></label>
@@ -90,16 +88,16 @@
                 <div class="dropdown">
                     <span class="dropdown-text">Номны төрөл</span>
                     <div class="dropdown-content">
-                        <p>Түүхийн ном</p>
-                        <p>Адал явдалт ном</p>
-                        <p>books1</p>
-                        <p>books2</p>
-                        <p>books3</p>
-                        <p>books4</p>
-                        <p>books5</p>
+                        <p><a href="bestseller.html">Бестселлер</a></p>
+                        <p><a href="history.html">Түүхийн ном</a></p>
+                        <p><a href="action.html">Адал явдалт ном</a></p>
+                        <p><a href="literature.html">Уран зохиолын ном</a></p>
+                        <p><a href="kids.html">Хүүхдийн ном</a></p>
+                        <p><a href="medical.html">Анагаах ухааны ном</a></p>
+                        <p><a href="financial.html">Эдийн засгийн ном</a></p>
                     </div>
                 </div>
-                <span>Хямдралтай номнууд</span>
+                <span><a href="hyamdral.html">Хямдралтай номнууд</a></span>
                 <span><a href="bichig_hereg.html">Бичиг хэрэг</a></span>
                 <span><a href="beleg_dursgal.html">Бэлэг дурсгал</a></span>
             </div>
