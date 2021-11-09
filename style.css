@@ -130,3 +130,17 @@
        width: 100%;
     }
   }
+.logo{
+  width: 5vw;
+  height: 5vw;;
+}
+.search-box{
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  width: fit-content;
+  height: fit-content;
+}
+.garchig{
+  text-align: center;
+}
