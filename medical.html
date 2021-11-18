@@ -13,97 +13,94 @@
     <title>Internom | Интерном</title>
 </head>
 <body>
-    <header>
-        <nav>
-          <section>
-            <img src="logo.png" alt="internom-logo" class="logo">
-            <div class="search">
-              <div class="search-box">
-                <input type="text" placeholder="Search...">
-                <div class="search"></div>
-              </div>
-            <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
-            <div id="login" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="closebtn">
-              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <h1>Нэвтрэх</h1>
-            </div>
+  <header>
+    <nav>
+      <section>
+        <div>
+          <img src="internom.png" alt="internom-logo" class="logo">
+          <span class="search-box">
+            <input type="text" placeholder="Search...">
+            <button class="searchbtn">Go</button>
+          </span>
+          <span><button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button></span>
+          <span><button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button></span>
+        </div>
+        <div id="login" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="closebtn">
+          <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h1>Нэвтрэх</h1>
+        </div>
 
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+<div class="container">
+  <label><b>Username</b></label>
+  <input type="text" placeholder="Enter Username" name="uname" required>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+  <label><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+    
+  <button type="submit">Login</button>
+  <label>
+    <input type="checkbox" name="remember"> Remember me
+  </label>
 </div>
 
-
-<button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button>
-
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+  <span class="psw">Forgot <a href="#">password?</a></span>
+</div>
+</form>
+</div>
 <div id="signup" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="closebtn">
-      <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <h1>Бүртгүүлэх</h1>
-    </div>
 
-    <div class="container">
-      <label><b>E-Mail</b></label>
-      <input type="text" placeholder="Enter E-Mail" name="email" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label><b>Password Again</b></label>
-      <input type="password" placeholder="Enter Password Again" name="pswa" required>
-        
-      <button type="submit">SIGN UP</button>
-      <label>
-        <input type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
-    </div>
-  </form>
+<form class="modal-content animate" action="/action_page.php" method="post">
+<div class="closebtn">
+  <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <h1>Бүртгүүлэх</h1>
 </div>
-            </div>
-            <div class="nav">
-                <span><a href="index.html">Эхлэл</a></span>
-                <div class="dropdown">
-                    <span class="dropdown-text">Номны төрөл</span>
-                    <div class="dropdown-content">
-                        <p><a href="bestseller.html">Бестселлер</a></p>
-                        <p><a href="history.html">Түүхийн ном</a></p>
-                        <p><a href="action.html">Адал явдалт ном</a></p>
-                        <p><a href="literature.html">Уран зохиолын ном</a></p>
-                        <p><a href="kids.html">Хүүхдийн ном</a></p>
-                        <p><a href="medical.html">Анагаах ухааны ном</a></p>
-                        <p><a href="financial.html">Эдийн засгийн ном</a></p>
-                    </div>
+
+<div class="container">
+  <label><b>E-Mail</b></label>
+  <input type="text" placeholder="Enter E-Mail" name="email" required>
+
+  <label><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+
+  <label><b>Password Again</b></label>
+  <input type="password" placeholder="Enter Password Again" name="pswa" required>
+    
+  <button type="submit">SIGN UP</button>
+  <label>
+    <input type="checkbox" name="remember"> Remember me
+  </label>
+</div>
+
+<div class="container" style="background-color:#f1f1f1">
+  <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn">Cancel</button>
+</div>
+</form>
+</div>
+        <div class="nav">
+            <span><a href="index.html">Эхлэл</a></span>
+            <div class="dropdown">
+                <span class="dropdown-text">Номны төрөл</span>
+                <div class="dropdown-content">
+                    <p><a href="bestseller.html">Бестселлер</a></p>
+                    <p><a href="history.html">Түүхийн ном</a></p>
+                    <p><a href="action.html">Адал явдалт ном</a></p>
+                    <p><a href="literature.html">Уран зохиолын ном</a></p>
+                    <p><a href="kids.html">Хүүхдийн ном</a></p>
+                    <p><a href="medical.html">Анагаах ухааны ном</a></p>
+                    <p><a href="financial.html">Эдийн засгийн ном</a></p>
                 </div>
-                <span><a href="hyamdral.html">Хямдралтай номнууд</a></span>
-                <span><a href="bichig_hereg.html">Бичиг хэрэг</a></span>
-                <span><a href="beleg_dursgal.html">Бэлэг дурсгал</a></span>
             </div>
-            </section>
-        </nav>
-    </header>
+            <span><a href="hyamdral.html">Хямдралтай номнууд</a></span>
+            <span><a href="bichig_hereg.html">Бичиг хэрэг</a></span>
+            <span><a href="beleg_dursgal.html">Бэлэг дурсгал</a></span>
+        </div>
+        </section>
+    </nav>
+</header>
     <main>
         <section class="garchig">
             <h1>Анагаах ухааны ном</h1>

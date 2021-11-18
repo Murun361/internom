@@ -16,13 +16,15 @@
     <header>
         <nav>
           <section>
-            <img src="logo.png" alt="internom-logo" class="logo">
-            <div class="search">
-              <div class="search-box">
+            <div>
+              <img src="internom.png" alt="internom-logo" class="logo">
+              <span class="search-box">
                 <input type="text" placeholder="Search...">
-                <div class="search"></div>
-              </div>
-            <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
+                <button class="searchbtn">Go</button>
+              </span>
+              <span><button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button></span>
+              <span><button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button></span>
+            </div>
             <div id="login" class="modal">
             <form class="modal-content animate" action="/action_page.php" method="post">
             <div class="closebtn">
@@ -49,10 +51,6 @@
     </div>
   </form>
 </div>
-
-
-<button onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button>
-
 <div id="signup" class="modal">
   
   <form class="modal-content animate" action="/action_page.php" method="post">
@@ -82,7 +80,6 @@
     </div>
   </form>
 </div>
-            </div>
             <div class="nav">
                 <span><a href="index.html">Эхлэл</a></span>
                 <div class="dropdown">
@@ -106,7 +103,17 @@
     </header>
     <main>
         <section class="image">
-            <img src="image1.jpg" alt="book" height="500vw" width="1500vw">
+          <div class="slide-wrapper">
+            <div class="slide">
+              <img src="image1.jpg" alt="book" height="500vw" width="1500vw">
+            </div>
+            <div class="slide">
+              <img src="slide1.jpg" alt="book" height="500vw" width="1500vw">
+            </div>
+            <div class="slide">
+              <img src="slide2.jpg" alt="book" height="500vw" width="1500vw">
+            </div>
+          </div>
         </section>
         <article class="zuragnuud">
             <div class="column">

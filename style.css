@@ -18,7 +18,24 @@
     background-color: #ddd;
 }
 .nav {
-    background-color: coral;
+
+  width: 1000px;
+  background-color: coral;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 15pt;
+  }
+.nav>span{
+  margin: 20px;
+}
+.nav>span>a,
+.dropdown-content>p>a{
+  text-decoration: none;
+  color: black;
+}
+.nav>span>a:hover{
+ color: white;
 }
 .column{
     float: left;
@@ -134,13 +151,32 @@
   width: 5vw;
   height: 5vw;;
 }
-.search-box{
-  position: absolute;
-  top: 40px;
-  left: 150px;
-  width: fit-content;
-  height: fit-content;
-}
 .garchig{
   text-align: center;
+}
+.image{
+  overflow: hidden;
+  height: 600px;
+  width: 1500px;
+  margin: 0 auto;
+}
+.slide-wrapper {
+  width: calc(1500px * 3);
+  animation: slide 9s ease infinite;
+}
+.slide {
+  float: left;
+  height: 600px;
+  width: 1500px;
+}
+@keyframes slide {
+  33% {
+    margin-left: 0px;
+  }
+  66% {
+    margin-left: calc(-1500px * 1);
+  }
+  100% {
+    margin-left: calc(-1500px * 2);
+  }
 }
